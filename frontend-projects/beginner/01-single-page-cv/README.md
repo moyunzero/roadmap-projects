@@ -58,14 +58,14 @@
 
 ## 验收
 
-- [ ] 官方提交清单五项全部勾选
-- [ ] 页面里没有任何内联 / 外链 CSS
-- [ ] 浏览器 console 无报错，favicon 正常显示
-- [ ] 用 [W3C Validator](https://validator.w3.org/) 校验无错误
-- [ ] 读屏 / 无样式状态下内容层次仍可理解
+- [x] 官方提交清单五项全部勾选
+- [x] 页面里没有任何内联 / 外链 CSS
+- [x] 浏览器 console 无报错，favicon 正常显示
+- [x] 用 [W3C Validator](https://validator.w3.org/) 校验无错误
+- [x] 读屏 / 无样式状态下内容层次仍可理解
 
 ## 笔记
 
 - W3C Nu Validator：**0 错误**（2026-11-16 校验通过）
-- `og:url` / `og:image` 目前是 `example.com` 示例绝对地址，部署后需换成真实域名
+- 未写 `og:url` / `og:image`：协议要求绝对地址，等有部署域名再补；`og:title` / `og:description` / `og:type` / `og:site_name` 已满足题面的 OG 要求
 - 行内 `style` 已全部移除，颜色留到 Personal Portfolio 那题再用
