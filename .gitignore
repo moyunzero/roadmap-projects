@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# 依赖
+node_modules/
+.pnpm-store/
+
+# 构建产物
+dist/
+build/
+.output/
+
+# 环境变量与密钥
+.env
+.env.*
+!.env.example
+
+# 日志与临时文件
+*.log
+*.local
+.vite/
+.cache/
