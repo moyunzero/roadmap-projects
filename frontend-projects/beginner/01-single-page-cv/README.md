@@ -52,6 +52,7 @@
 ## 实现
 
 - 入口：`index.html`
+- 图标：`favicon.svg`（`<link rel="icon">` 引入）
 - 技术：纯 HTML
 - 运行方式：直接双击打开 / `npx serve .`
 
@@ -65,4 +66,6 @@
 
 ## 笔记
 
-- 
+- W3C Nu Validator：**0 错误**（2026-11-16 校验通过）
+- `og:url` / `og:image` 目前是 `example.com` 示例绝对地址，部署后需换成真实域名
+- 行内 `style` 已全部移除，颜色留到 Personal Portfolio 那题再用
