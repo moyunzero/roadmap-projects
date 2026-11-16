@@ -66,6 +66,8 @@
 
 ## 笔记
 
+完整知识点整理见 **[NOTES.md](NOTES.md)**：文档骨架、meta/SEO、Open Graph、favicon、语义化标签、标题层级、address/time、校验方法 —— 每条都附官方文档出处。
+
 - W3C Nu Validator：**0 错误**（2026-11-16 校验通过）
-- 未写 `og:url` / `og:image`：协议要求绝对地址，等有部署域名再补；`og:title` / `og:description` / `og:type` / `og:site_name` 已满足题面的 OG 要求
+- `og:url` / `og:image` 需要绝对地址，本题未写，原因见 NOTES 第 3.8 节
 - 行内 `style` 已全部移除，颜色留到 Personal Portfolio 那题再用
