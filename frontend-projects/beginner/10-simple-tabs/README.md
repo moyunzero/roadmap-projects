@@ -4,7 +4,7 @@
 | --- | --- |
 | 级别 | `beginner` |
 | 主题 | JavaScript |
-| 官方题面 | [roadmap.sh/projects/simple-tabs](https://roadmap.sh/projects/simple-tabs) |
+| 项目网址 | <https://roadmap.sh/projects/simple-tabs> |
 | 状态 | ⬜ 未开始 |
 
 **题目（原文）**：Create a simple tabs component using HTML, CSS, and JavaScript

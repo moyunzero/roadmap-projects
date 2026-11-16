@@ -4,7 +4,7 @@
 | --- | --- |
 | 级别 | `beginner` |
 | 主题 | JavaScript |
-| 官方题面 | [roadmap.sh/projects/restricted-textarea](https://roadmap.sh/projects/restricted-textarea) |
+| 项目网址 | <https://roadmap.sh/projects/restricted-textarea> |
 | 状态 | ⬜ 未开始 |
 
 **题目（原文）**：Create a textarea with live character count and a max character limit

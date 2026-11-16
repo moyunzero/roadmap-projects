@@ -4,7 +4,7 @@
 | --- | --- |
 | 级别 | `intermediate` |
 | 主题 | JavaScript |
-| 官方题面 | [roadmap.sh/projects/custom-dropdown](https://roadmap.sh/projects/custom-dropdown) |
+| 项目网址 | <https://roadmap.sh/projects/custom-dropdown> |
 | 状态 | ⬜ 未开始 |
 
 **题目（原文）**：Create a custom dropdown using HTML, CSS, and JavaScript

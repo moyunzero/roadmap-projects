@@ -4,7 +4,7 @@
 | --- | --- |
 | 级别 | `beginner` |
 | 主题 | HTML |
-| 官方题面 | [roadmap.sh/projects/blog-post-page](https://roadmap.sh/projects/blog-post-page) |
+| 项目网址 | <https://roadmap.sh/projects/blog-post-page> |
 | 状态 | ⬜ 未开始 |
 
 **题目（原文）**：Build a single semantic HTML blog post with proper text elements, links, and a figure

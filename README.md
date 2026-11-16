@@ -31,6 +31,9 @@ roadmap-projects/
 └── index.html     # 自己的实现，文件随意
 ```
 
+> **硬性要求**：每个项目的 README 必须写明官方项目网址，例如
+> `https://roadmap.sh/projects/single-page-cv`。roadmap.sh 提交解决方案时要求 README 里含项目网址。
+
 ## 新增一条路线
 
 ```bash

@@ -4,7 +4,7 @@
 | --- | --- |
 | 级别 | `intermediate` |
 | 主题 | CSS |
-| 官方题面 | [roadmap.sh/projects/theme-switcher](https://roadmap.sh/projects/theme-switcher) |
+| 项目网址 | <https://roadmap.sh/projects/theme-switcher> |
 | 状态 | ⬜ 未开始 |
 
 **题目（原文）**：Build a theme switcher that changes a card using CSS variables

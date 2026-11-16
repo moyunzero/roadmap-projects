@@ -4,7 +4,7 @@
 | --- | --- |
 | 级别 | `intermediate` |
 | 主题 | API Integration |
-| 官方题面 | [roadmap.sh/projects/reddit-client](https://roadmap.sh/projects/reddit-client) |
+| 项目网址 | <https://roadmap.sh/projects/reddit-client> |
 | 状态 | ⬜ 未开始 |
 
 **题目（原文）**：Create a Reddit client with customizable subreddit lanes

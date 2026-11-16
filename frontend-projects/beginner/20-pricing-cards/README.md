@@ -4,7 +4,7 @@
 | --- | --- |
 | 级别 | `beginner` |
 | 主题 | CSS |
-| 官方题面 | [roadmap.sh/projects/pricing-cards](https://roadmap.sh/projects/pricing-cards) |
+| 项目网址 | <https://roadmap.sh/projects/pricing-cards> |
 | 状态 | ⬜ 未开始 |
 
 **题目（原文）**：Create a row of three pricing cards using HTML and CSS

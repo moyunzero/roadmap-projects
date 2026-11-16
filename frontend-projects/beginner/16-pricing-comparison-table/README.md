@@ -4,7 +4,7 @@
 | --- | --- |
 | 级别 | `beginner` |
 | 主题 | HTML |
-| 官方题面 | [roadmap.sh/projects/pricing-comparison-table](https://roadmap.sh/projects/pricing-comparison-table) |
+| 项目网址 | <https://roadmap.sh/projects/pricing-comparison-table> |
 | 状态 | ⬜ 未开始 |
 
 **题目（原文）**：Build a single-page pricing comparison using a real, accessible HTML table

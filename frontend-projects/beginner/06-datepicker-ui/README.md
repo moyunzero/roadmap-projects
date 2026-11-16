@@ -4,7 +4,7 @@
 | --- | --- |
 | 级别 | `beginner` |
 | 主题 | CSS |
-| 官方题面 | [roadmap.sh/projects/datepicker-ui](https://roadmap.sh/projects/datepicker-ui) |
+| 项目网址 | <https://roadmap.sh/projects/datepicker-ui> |
 | 状态 | ⬜ 未开始 |
 
 **题目（原文）**：Create a simple datepicker UI using HTML and CSS

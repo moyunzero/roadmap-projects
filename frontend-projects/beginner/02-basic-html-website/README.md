@@ -4,7 +4,7 @@
 | --- | --- |
 | 级别 | `beginner` |
 | 主题 | HTML |
-| 官方题面 | [roadmap.sh/projects/basic-html-website](https://roadmap.sh/projects/basic-html-website) |
+| 项目网址 | <https://roadmap.sh/projects/basic-html-website> |
 | 状态 | ⬜ 未开始 |
 
 **题目（原文）**：Create simple HTML only website with multiple pages

@@ -4,7 +4,7 @@
 | --- | --- |
 | 级别 | `intermediate` |
 | 主题 | JavaScript |
-| 官方题面 | [roadmap.sh/projects/task-tracker-js](https://roadmap.sh/projects/task-tracker-js) |
+| 项目网址 | <https://roadmap.sh/projects/task-tracker-js> |
 | 状态 | ⬜ 未开始 |
 
 **题目（原文）**：Create a task tracker with a to-do list using JavaScript

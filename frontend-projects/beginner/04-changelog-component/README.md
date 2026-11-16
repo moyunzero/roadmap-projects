@@ -4,7 +4,7 @@
 | --- | --- |
 | 级别 | `beginner` |
 | 主题 | CSS |
-| 官方题面 | [roadmap.sh/projects/changelog-component](https://roadmap.sh/projects/changelog-component) |
+| 项目网址 | <https://roadmap.sh/projects/changelog-component> |
 | 状态 | ⬜ 未开始 |
 
 **题目（原文）**：Create a changelog component for a website using HTML and CSS

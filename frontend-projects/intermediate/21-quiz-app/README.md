@@ -4,7 +4,7 @@
 | --- | --- |
 | 级别 | `intermediate` |
 | 主题 | Frameworks |
-| 官方题面 | [roadmap.sh/projects/quiz-app](https://roadmap.sh/projects/quiz-app) |
+| 项目网址 | <https://roadmap.sh/projects/quiz-app> |
 | 状态 | ⬜ 未开始 |
 
 **题目（原文）**：Build a browser-based quiz application to test any knowledge

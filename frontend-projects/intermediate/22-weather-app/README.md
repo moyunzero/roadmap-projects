@@ -4,7 +4,7 @@
 | --- | --- |
 | 级别 | `intermediate` |
 | 主题 | API |
-| 官方题面 | [roadmap.sh/projects/weather-app](https://roadmap.sh/projects/weather-app) |
+| 项目网址 | <https://roadmap.sh/projects/weather-app> |
 | 状态 | ⬜ 未开始 |
 
 **题目（原文）**：Build a weather app that fetches and displays weather for a given location

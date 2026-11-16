@@ -4,7 +4,7 @@
 | --- | --- |
 | 级别 | `intermediate` |
 | 主题 | Frameworks |
-| 官方题面 | [roadmap.sh/projects/pomodoro-timer](https://roadmap.sh/projects/pomodoro-timer) |
+| 项目网址 | <https://roadmap.sh/projects/pomodoro-timer> |
 | 状态 | ⬜ 未开始 |
 
 **题目（原文）**：Create a pomodoro tracker application for productivity

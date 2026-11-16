@@ -4,7 +4,7 @@
 | --- | --- |
 | 级别 | `beginner` |
 | 主题 | JavaScript |
-| 官方题面 | [roadmap.sh/projects/accordion](https://roadmap.sh/projects/accordion) |
+| 项目网址 | <https://roadmap.sh/projects/accordion> |
 | 状态 | ⬜ 未开始 |
 
 **题目（原文）**：Create an accordion component using HTML, CSS, and JavaScript

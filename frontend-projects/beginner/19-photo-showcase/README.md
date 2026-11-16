@@ -4,7 +4,7 @@
 | --- | --- |
 | 级别 | `beginner` |
 | 主题 | HTML |
-| 官方题面 | [roadmap.sh/projects/photo-showcase](https://roadmap.sh/projects/photo-showcase) |
+| 项目网址 | <https://roadmap.sh/projects/photo-showcase> |
 | 状态 | ⬜ 未开始 |
 
 **题目（原文）**：Build an HTML photo showcase page with proper alt text, figures with captions, and an embedded video

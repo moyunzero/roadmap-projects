@@ -4,7 +4,7 @@
 | --- | --- |
 | 级别 | `beginner` |
 | 主题 | HTML · Semantic HTML · Layout · SEO |
-| 官方题面 | [roadmap.sh/projects/single-page-cv](https://roadmap.sh/projects/single-page-cv) |
+| 项目网址 | <https://roadmap.sh/projects/single-page-cv> |
 | 状态 | ⬜ 未开始 |
 
 **原文题目**：Create a single-page HTML CV to showcase your career history

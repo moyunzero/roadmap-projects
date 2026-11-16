@@ -4,7 +4,7 @@
 | --- | --- |
 | 级别 | `beginner` |
 | 主题 | CSS |
-| 官方题面 | [roadmap.sh/projects/image-grid](https://roadmap.sh/projects/image-grid) |
+| 项目网址 | <https://roadmap.sh/projects/image-grid> |
 | 状态 | ⬜ 未开始 |
 
 **题目（原文）**：Create a grid layout of images using HTML and CSS

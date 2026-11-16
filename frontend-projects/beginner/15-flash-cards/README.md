@@ -4,7 +4,7 @@
 | --- | --- |
 | 级别 | `beginner` |
 | 主题 | Frontend |
-| 官方题面 | [roadmap.sh/projects/flash-cards](https://roadmap.sh/projects/flash-cards) |
+| 项目网址 | <https://roadmap.sh/projects/flash-cards> |
 | 状态 | ⬜ 未开始 |
 
 **题目（原文）**：Create a flash card app using JavaScript frameworks

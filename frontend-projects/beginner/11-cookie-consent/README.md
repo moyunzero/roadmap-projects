@@ -4,7 +4,7 @@
 | --- | --- |
 | 级别 | `beginner` |
 | 主题 | JavaScript |
-| 官方题面 | [roadmap.sh/projects/cookie-consent](https://roadmap.sh/projects/cookie-consent) |
+| 项目网址 | <https://roadmap.sh/projects/cookie-consent> |
 | 状态 | ⬜ 未开始 |
 
 **题目（原文）**：Create a simple cookie consent banner using JavaScript

@@ -4,7 +4,7 @@
 | --- | --- |
 | 级别 | `intermediate` |
 | 主题 | API Integration |
-| 官方题面 | [roadmap.sh/projects/github-random-repo](https://roadmap.sh/projects/github-random-repo) |
+| 项目网址 | <https://roadmap.sh/projects/github-random-repo> |
 | 状态 | ⬜ 未开始 |
 
 **题目（原文）**：Create a GitHub random repository finder using GitHub API
