@@ -41,6 +41,22 @@ mkdir -p backend-projects/{beginner,intermediate,advanced}
 # 然后照着 frontend-projects/README.md 的格式建清单
 ```
 
+## 提交到 roadmap.sh
+
+提交时只能填**仓库根地址**，不能填子目录：
+
+```text
+✅ https://github.com/moyunzero/roadmap-projects
+❌ https://github.com/moyunzero/roadmap-projects/tree/main/frontend-projects/beginner/02-basic-html-website
+```
+
+`URL must point to a public GitHub repository` 这个报错，通常就是填了子目录 / 文件链接。roadmap.sh 会再检查本 README 里是否含对应项目网址，所以下表要保持更新。
+
+| 项目 | 目录 | 官方项目网址 |
+| --- | --- | --- |
+| 01 · Single-Page CV | [beginner/01-single-page-cv](frontend-projects/beginner/01-single-page-cv/) | <https://roadmap.sh/projects/single-page-cv> |
+| 02 · Basic HTML Website | [beginner/02-basic-html-website](frontend-projects/beginner/02-basic-html-website/) | <https://roadmap.sh/projects/basic-html-website> |
+
 ## 进度
 
 | Track | 项目数 | 完成 | 状态 |
