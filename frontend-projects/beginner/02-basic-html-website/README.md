@@ -71,6 +71,8 @@
 
 ## 笔记
 
+完整知识点整理见 **[NOTES.md](NOTES.md)**：多页面与相对路径、nav/header/footer、`aria-current`、每页 SEO、表单与 label 关联、原生校验、多页校验方法 —— 每条都附官方文档出处。
+
 - 四个页面 W3C 校验全部通过（2026-11-18）：`The document validates according to the specified schema(s).`
 - 导航用 `<nav aria-label="Main">`，当前页加 `aria-current="page"`，读屏能播报「当前页」
 - 站点 logo 用 `favicon.svg`，`alt=""` 留空 —— 旁边的文字已经说明了站点名，重复播报反而吵
