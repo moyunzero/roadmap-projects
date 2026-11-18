@@ -5,7 +5,7 @@
 | 级别 | `beginner` |
 | 主题 | HTML · Layout · Semantic HTML |
 | 项目网址 | <https://roadmap.sh/projects/basic-html-website> |
-| 状态 | ⬜ 未开始 |
+| 状态 | ✅ 已完成 |
 
 **原文题目**：Create simple HTML only website with multiple pages
 
@@ -56,18 +56,22 @@
 
 - 入口：`index.html`
 - 页面：`index.html` / `projects.html` / `articles.html` / `contact.html`
+- 图标：`favicon.svg`（四个页面都用同一份）
 - 技术：纯 HTML
 - 运行方式：直接双击打开 / `npx serve .`
 
 ## 验收
 
-- [ ] 官方提交清单四项全部勾选
-- [ ] 从任意页面都能一键跳到其余三个页面
-- [ ] 页面里没有任何内联 / 外链 CSS
-- [ ] 表单不依赖 JS 也能填写，且 label 可点击聚焦输入框
-- [ ] 每个页面都过一遍 [W3C Validator](https://validator.w3.org/nu/)，0 error
-- [ ] 窄屏 375px 下没有横向滚动条
+- [x] 官方提交清单四项全部勾选
+- [x] 从任意页面都能一键跳到其余三个页面
+- [x] 页面里没有任何内联 / 外链 CSS
+- [x] 表单不依赖 JS 也能填写，且 label 可点击聚焦输入框
+- [x] 每个页面都过一遍 [W3C Validator](https://validator.w3.org/nu/)，0 error
+- [x] 窄屏 375px 下没有横向滚动条
 
 ## 笔记
 
-- 
+- 四个页面 W3C 校验全部通过（2026-11-18）：`The document validates according to the specified schema(s).`
+- 导航用 `<nav aria-label="Main">`，当前页加 `aria-current="page"`，读屏能播报「当前页」
+- 站点 logo 用 `favicon.svg`，`alt=""` 留空 —— 旁边的文字已经说明了站点名，重复播报反而吵
+- 375px 自查：把 `body` 宽度约束到 375px 后测 `scrollWidth`，四页均为 375（无横向溢出）

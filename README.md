@@ -45,4 +45,4 @@ mkdir -p backend-projects/{beginner,intermediate,advanced}
 
 | Track | 项目数 | 完成 | 状态 |
 | --- | --- | --- | --- |
-| [frontend-projects](frontend-projects/) | 30 | 0 | 🚀 进行中 |
+| [frontend-projects](frontend-projects/) | 30 | 2 | 🚀 进行中 |

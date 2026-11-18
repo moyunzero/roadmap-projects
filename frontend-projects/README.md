@@ -8,8 +8,8 @@
 
 ## Beginner（20）
 
-- [ ] **01** [Single-Page CV](beginner/01-single-page-cv/) · `HTML`
-- [ ] **02** [Basic HTML Website](beginner/02-basic-html-website/) · `HTML`
+- [x] **01** [Single-Page CV](beginner/01-single-page-cv/) · `HTML`
+- [x] **02** [Basic HTML Website](beginner/02-basic-html-website/) · `HTML`
 - [ ] **03** [Personal Portfolio](beginner/03-portfolio-website/) · `CSS`
 - [ ] **04** [Changelog Component](beginner/04-changelog-component/) · `CSS`
 - [ ] **05** [Testimonial Cards](beginner/05-testimonial-cards/) · `CSS`
