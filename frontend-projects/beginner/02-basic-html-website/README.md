@@ -38,10 +38,10 @@
 
 ## 提交清单（官方）
 
-- [ ] 语义正确的 HTML 结构
-- [ ] 多个页面，且带导航栏
-- [ ] 每个页面的 `<head>` 里都有 SEO meta 标签
-- [ ] Contact 页有表单，含 name、email、message 等字段
+- [x] 语义正确的 HTML 结构
+- [x] 多个页面，且带导航栏
+- [x] 每个页面的 `<head>` 里都有 SEO meta 标签
+- [x] Contact 页有表单，含 name、email、message 等字段
 
 ## 提示
 
