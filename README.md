@@ -56,9 +56,10 @@ mkdir -p backend-projects/{beginner,intermediate,advanced}
 | --- | --- | --- |
 | 01 · Single-Page CV | [beginner/01-single-page-cv](frontend-projects/beginner/01-single-page-cv/) | <https://roadmap.sh/projects/single-page-cv> |
 | 02 · Basic HTML Website | [beginner/02-basic-html-website](frontend-projects/beginner/02-basic-html-website/) | <https://roadmap.sh/projects/basic-html-website> |
+| 03 · Personal Portfolio | [beginner/03-portfolio-website](frontend-projects/beginner/03-portfolio-website/) | <https://roadmap.sh/projects/portfolio-website> |
 
 ## 进度
 
 | Track | 项目数 | 完成 | 状态 |
 | --- | --- | --- | --- |
-| [frontend-projects](frontend-projects/) | 30 | 2 | 🚀 进行中 |
+| [frontend-projects](frontend-projects/) | 30 | 3 | 🚀 进行中 |
