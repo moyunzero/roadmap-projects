@@ -21,9 +21,19 @@
 
 也就是说：**这题练的是定位与布局**，成品要像真实产品里的「更新日志」区块。
 
-参考 mockup（官方，只作结构参考）：
+参考 mockup（官方原图已存为本目录的 [mockup.png](mockup.png)）：
 
-![Changelog Component 参考图](https://assets.roadmap.sh/guest/changelog-component-1m86j.png)
+![Changelog Component 参考图：左侧日期、中间竖线与圆点、右侧变更条目，底部有 Visit Complete Changelog 按钮](mockup.png)
+
+从图里能拆出三层结构：
+
+| 区域 | 内容 | 布局要点 |
+| --- | --- | --- |
+| 标题区 | `Changelog` + 一句副标题 | 居中，副标题弱化 |
+| 时间线 | 日期（左）\| 圆点 + 竖线（中）\| 变更条目（右） | 三列，或两列 + 定位线 |
+| 底部 | `Visit Complete Changelog` 按钮 | 居中，与列表留出间距 |
+
+> 原图地址：<https://assets.roadmap.sh/guest/changelog-component-1m86j.png>
 
 官方还明确说了：
 
