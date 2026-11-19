@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Articles — Mo Yun</title>
+    <meta name="description" content="Short notes about HTML, CSS, accessibility and the roadmap.sh frontend projects, written while building them.">
+    <meta name="author" content="Mo Yun">
+
+    <meta property="og:title" content="Articles — Mo Yun">
+    <meta property="og:description" content="Notes about HTML, CSS, accessibility and the roadmap.sh frontend projects.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mo Yun">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./theme.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a href="./index.html" class="brand">
+            <img src="favicon.svg" width="32" height="32" alt="">
+            <span>Mo Yun</span>
+        </a>
+        <nav aria-label="Main" class="site-nav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./articles.html" aria-current="page">Articles</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false">Dark mode</button>
+    </header>
+
+    <main class="site-main">
+        <header class="page-intro">
+            <h1>Articles</h1>
+            <p>Notes written while working through the roadmap.sh projects. Longer versions live in each project's README.</p>
+        </header>
+
+        <div class="card-list">
+            <article class="card">
+                <h2>What a single-page CV taught me about semantic HTML</h2>
+                <p class="article-meta"><time datetime="2026-11-16">November 16, 2026</time></p>
+                <p>A heading level is structure, not font size. My first CV jumped from h1 to h3 because it looked right, which broke the outline for both search engines and screen readers.</p>
+            </article>
+
+            <article class="card">
+                <h2>Four tags that make a page shareable</h2>
+                <p class="article-meta"><time datetime="2026-11-16">November 16, 2026</time></p>
+                <p>SEO meta, Open Graph tags, a favicon and a clear title: none of them are visible on the page, and all of them change how the page is found and shared.</p>
+            </article>
+
+            <article class="card">
+                <h2>Why the contact page matters more than it looks</h2>
+                <p class="article-meta"><time datetime="2026-11-18">November 18, 2026</time></p>
+                <p>A form is the first place a static site asks for input. Labels, required fields and the right input types carry most of the accessibility work.</p>
+            </article>
+
+            <article class="card">
+                <h2>Mobile-first CSS: style the phone, then grow</h2>
+                <p class="article-meta"><time datetime="2026-11-19">November 19, 2026</time></p>
+                <p>Default styles for a narrow screen, then <code>@media (min-width: 48em)</code> for desktop. It is easier than writing a desktop layout and fighting to shrink it later.</p>
+            </article>
+        </div>
+
+        <p>The full notes for each project are in the repository: <a href="https://github.com/moyunzero/roadmap-projects">moyunzero/roadmap-projects</a>.</p>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Mo Yun</p>
+        <p><a href="mailto:moyun@example.com">moyun@example.com</a> · <a href="tel:+861234567890">123-456-7890</a></p>
+        <p>Built for the roadmap.sh <a href="https://roadmap.sh/projects/portfolio-website">Personal Portfolio</a> project.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects — Mo Yun</title>
+    <meta name="description" content="Frontend projects built while working through the roadmap.sh frontend path: a single-page CV, a multi-page site, and this portfolio.">
+    <meta name="author" content="Mo Yun">
+
+    <meta property="og:title" content="Projects — Mo Yun">
+    <meta property="og:description" content="Frontend projects built while working through the roadmap.sh frontend path.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mo Yun">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./theme.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a href="./index.html" class="brand">
+            <img src="favicon.svg" width="32" height="32" alt="">
+            <span>Mo Yun</span>
+        </a>
+        <nav aria-label="Main" class="site-nav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./projects.html" aria-current="page">Projects</a></li>
+                <li><a href="./articles.html">Articles</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false">Dark mode</button>
+    </header>
+
+    <main class="site-main">
+        <header class="page-intro">
+            <h1>Projects</h1>
+            <p>Everything here is built by hand, one roadmap.sh project at a time.</p>
+        </header>
+
+        <section class="section">
+            <h2>Completed</h2>
+            <div class="card-list">
+                <article class="card">
+                    <h3>Single-Page CV</h3>
+                    <p>One HTML file, no styling: semantic sections for skills, education and work history, plus SEO meta tags, Open Graph tags and a favicon.</p>
+                    <p><span class="status">Done</span></p>
+                    <p><a href="https://github.com/moyunzero/roadmap-projects/tree/main/frontend-projects/beginner/01-single-page-cv">See the code on GitHub</a></p>
+                </article>
+
+                <article class="card">
+                    <h3>Basic HTML Website</h3>
+                    <p>Four pages, one shared navigation bar, and a contact form — structure first, styles next.</p>
+                    <p><span class="status">Done</span></p>
+                    <p><a href="https://github.com/moyunzero/roadmap-projects/tree/main/frontend-projects/beginner/02-basic-html-website">See the code on GitHub</a></p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>In progress</h2>
+            <div class="card-list">
+                <article class="card">
+                    <h3>Personal Portfolio</h3>
+                    <p>The site you are reading: the HTML skeleton from project 02, now styled with CSS variables, Flexbox and media queries.</p>
+                    <p><span class="status">In progress</span></p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Planned</h2>
+            <div class="card-list">
+                <article class="card">
+                    <h3>Next roadmap.sh projects</h3>
+                    <p>More frontend practice after this portfolio: layouts, components and interactivity.</p>
+                    <p><span class="status">Not started</span></p>
+                </article>
+            </div>
+        </section>
+
+        <p>All source code lives in one repository: <a href="https://github.com/moyunzero/roadmap-projects">moyunzero/roadmap-projects</a>.</p>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Mo Yun</p>
+        <p><a href="mailto:moyun@example.com">moyun@example.com</a> · <a href="tel:+861234567890">123-456-7890</a></p>
+        <p>Built for the roadmap.sh <a href="https://roadmap.sh/projects/portfolio-website">Personal Portfolio</a> project.</p>
+    </footer>
+</body>
+</html>

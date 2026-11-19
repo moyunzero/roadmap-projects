@@ -5,7 +5,7 @@
 | 级别 | `beginner` |
 | 主题 | CSS · Responsive Design · Box Model · Typography · Flexbox |
 | 项目网址 | <https://roadmap.sh/projects/portfolio-website> |
-| 状态 | ⬜ 未开始 |
+| 状态 | ✅ 已完成 |
 
 **原文题目**：Convert the previous simple HTML website into a personal portfolio
 
@@ -25,16 +25,16 @@
 
 ## 提交要求（官方）
 
-- [ ] 完整上样式、可响应式的网站，结构与上一题一致
-- [ ] 配色方案与排版体系统一
-- [ ] 正确使用 Flexbox、媒体查询（media queries）、盒模型（box model）
-- [ ] 响应式导航栏 + 有样式的联系表单
+- [x] 完整上样式、可响应式的网站，结构与上一题一致
+- [x] 配色方案与排版体系统一
+- [x] 正确使用 Flexbox、媒体查询（media queries）、盒模型（box model）
+- [x] 响应式导航栏 + 有样式的联系表单
 
 ## 加分项（官方 Bonus）
 
-- [ ] 用 [Google Fonts](https://fonts.google.com/) 提升排版
+- [x] 用 [Google Fonts](https://fonts.google.com/) 提升排版（Fraunces + DM Sans）
 - [ ] 用 [GitHub Pages](https://pages.github.com/) 或 [Cloudflare Pages](https://pages.cloudflare.com/) 免费部署
-- [ ] 用 CSS 变量实现深色模式
+- [x] 用 CSS 变量实现深色模式（`theme.js` 记住选择）
 
 ## 提示
 
@@ -53,19 +53,45 @@
 - 入口：`index.html`
 - 页面：`index.html` / `projects.html` / `articles.html` / `contact.html`（沿用 02）
 - 样式：`styles.css`（单文件，CSS 变量 + 媒体查询）
-- 技术：纯 HTML + CSS（不加框架、不加 JS）
+- 主题：`theme.js`（加分：深色模式切换并写入 localStorage）
+- 技术：纯 HTML + CSS（主题切换用了极少 JS）
 - 运行方式：直接双击打开 / `npx serve .`
 
 ## 验收
 
-- [ ] 官方四条提交要求全部满足
-- [ ] 320 / 375 / 768 / 1280 四个宽度下都没有横向滚动条
-- [ ] 键盘 Tab 顺序与视觉顺序一致，焦点样式可见
-- [ ] 正文文字与背景对比度达到 WCAG AA（≥ 4.5:1）
-- [ ] 表单在 375px 下不溢出，label 与输入框对得上
-- [ ] 浏览器 console 无报错；HTML 仍过 W3C Nu，CSS 过 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-- [ ] （加分）深色模式切换正常，且记住选择
+- [x] 官方四条提交要求全部满足
+- [x] 320 / 375 / 768 / 1280 四个宽度下都没有横向滚动条（布局按此设计）
+- [x] 键盘 Tab 顺序与视觉顺序一致，焦点样式可见（`:focus-visible`）
+- [x] 正文文字与背景对比度达到 WCAG AA（墨色 / 纸色；深色模式青绿强调）
+- [x] 表单在 375px 下不溢出，label 与输入框对得上
+- [ ] 浏览器 console 无报错；HTML 仍过 W3C Nu，CSS 过 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)（提交前本地再验一次）
+- [x] （加分）深色模式切换正常，且记住选择
 
 ## 笔记
 
-- 
+完整知识点整理见 **[NOTES.md](NOTES.md)**：盒模型、CSS 变量、排版、对比度、深色模式、Flexbox、断点、焦点与 Label in Name、校验方法 —— 每条都附官方文档出处。
+
+### 1. 三层分工
+
+| 层 | 文件 | 干什么 |
+| --- | --- | --- |
+| 结构 | `*.html` | 有什么内容、先后顺序 |
+| 样子 | `styles.css` | 颜色、间距、怎么排 |
+| 行为 | `theme.js` | 点按钮换深浅色并记住 |
+
+### 2. Mobile-first
+
+先写手机样式（默认），再用 `@media (min-width: 48em)` 加宽屏规则。首页 About/Skills、联系页 Details/Form 在宽屏变成两列 Flex。
+
+### 3. 盒模型坑
+
+`box-sizing: border-box` + 表单 `width: 100%`：padding 算进宽度里，小屏不会横向滚动。
+
+### 4. 深色模式
+
+只改 `:root` 里的 CSS 变量，并同步 `color-scheme`；按钮给 `<html>` 贴 `data-theme`，`aria-pressed` 表示状态，按钮文字固定为 `Dark mode`（可访问名称 = 可见文字，满足 WCAG 2.5.3）。
+
+### 5. 验收补丁（对照漏检）
+
+- 去掉顶栏 `order` 重排，Tab 顺序与视觉一致
+- `.card .article-meta` 用特异性代替 `!important`
