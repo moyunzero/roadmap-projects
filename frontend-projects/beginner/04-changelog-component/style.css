@@ -1,0 +1,150 @@
+/* 页面只负责居中展示；真正样式都挂在 .changelog 上，方便以后嵌进别的网站 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  font-family: system-ui, sans-serif;
+  background: #f3f4f6;
+  color: #111;
+}
+
+.changelog {
+  width: 100%;
+  max-width: 40rem;
+  padding: 2.5rem 1.5rem;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+}
+
+/* —— 标题区 —— */
+.changelog_header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.changelog_header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.75rem;
+}
+
+.changelog_subtitle {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+/* —— 时间线列表 —— */
+.changelog_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative; /* 竖线相对这个盒子定位 */
+}
+
+/* 中间竖线 */
+.changelog_list::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0.5rem;
+  bottom: 0.4rem;
+  width: 2px;
+  background: #111;
+  transform: translateX(-50%);
+}
+
+.changelog_item {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 左日期 | 右文案 */
+  column-gap: 2.5rem;             /* 中间留空给竖线和圆点 */
+  position: relative;
+  padding: 0.65rem 0;
+}
+
+/* 圆点：钉在每条垂直中间线位置 */
+.changelog_item::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 1.2rem; /* 大致和文字第一行对齐，可微调 */
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  background: #111;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.changelog_date {
+  margin: 0;
+  text-align: right;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.changelog_text {
+  margin: 0;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+/* 底部链接：这一步先简单排一下，第 3 步再做成按钮 */
+.changelog_footer {
+  margin: 2rem 0 0;
+  text-align: center;
+}
+.changelog_button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    background: #1f2937;
+    color: #fff;
+    text-decoration: none;   /* 去掉链接下划线 */
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+}
+  
+  /* 键盘 Tab 聚焦时要看得见（鼠标点不显示也没关系） */
+.changelog_button:focus-visible {
+    outline: 2px solid #111;
+    outline-offset: 3px;
+}
+  
+.changelog_button:hover {
+    background: #111;
+}
+
+@media (max-width: 560px) {
+    .changelog {
+        padding: 1.75rem 1.25rem;
+    }
+
+    .changelog_list::before {
+        left: 0.3rem;                 /* 和圆点用同一个锚点 */
+        transform: translateX(-50%);  /* 仍按自身中心对齐，不要写成 none */
+    }
+
+    .changelog_item {
+        grid-template-columns: 1fr; /* 变成一列 */
+        column-gap: 0;
+        padding-left: 1.75rem;   /* 给左边的点和线留空 */
+    }
+
+    .changelog_item::before {
+        left: 0.3rem; /* 与竖线同一个 left；自身仍有 translate(-50%, -50%) */
+    }
+
+    .changelog_date {
+        text-align: left;        /* 不再靠右 */
+        margin-bottom: 0.25rem;
+    }
+}

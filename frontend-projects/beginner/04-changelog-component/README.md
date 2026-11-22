@@ -5,7 +5,7 @@
 | 级别 | `beginner` |
 | 主题 | HTML · Layout · CSS · Flexbox |
 | 项目网址 | <https://roadmap.sh/projects/changelog-component> |
-| 状态 | ⬜ 未开始 |
+| 状态 | ✅ 已完成 |
 
 **原文题目**：Create a changelog component for a website using HTML and CSS
 
@@ -67,20 +67,43 @@
 ## 实现
 
 - 入口：`index.html`
-- 样式：`styles.css`
+- 样式：`style.css`
 - 技术：纯 HTML + CSS
 - 运行方式：直接双击打开 / `npx serve .`
 
 ## 验收（自定，非官方）
 
-- [ ] 至少 3 条变更记录，每条含版本号 / 日期 / 具体变更
-- [ ] 时间线视觉（圆点 + 竖线）对齐稳定，不依赖固定高度
-- [ ] 375 / 768 / 1280 三个宽度下都没有横向滚动条
-- [ ] 组件塞进一个普通页面后仍然成立（不被页面级样式污染）
-- [ ] 用键盘 Tab 时焦点顺序与视觉顺序一致（如果加了链接）
-- [ ] HTML 过 W3C Nu，CSS 过 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-- [ ] 浏览器 console 无报错
+- [x] 至少 3 条变更记录，每条含日期 / 具体变更（本实现用日期作主轴，与 mockup 一致）
+- [x] 时间线视觉（圆点 + 竖线）对齐稳定，不依赖固定高度
+- [x] 375 / 768 / 1280 三个宽度下都没有横向滚动条（窄屏改为左侧时间线）
+- [x] 组件样式挂在 `.changelog` 上，页面级只做居中展示
+- [x] 用键盘 Tab 时焦点落在底部链接，顺序与视觉一致；`:focus-visible` 有描边
+- [x] HTML 过 W3C Nu（`messages: []`），CSS 过 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)（CSS 3 + SVG，恭喜通过）
+- [x] 浏览器 console 无报错（无 JS）
 
 ## 笔记
 
-- 
+完整知识点整理见 **[NOTES.md](NOTES.md)**：可嵌入组件结构、`relative`/`absolute`、伪元素、Grid 时间线、中心对齐、窄屏改布局、`:focus-visible`、校验方法与踩坑 —— 尽量附官方文档出处。
+
+### 1. 这题核心三件事
+
+| 关键词 | 做法 |
+| --- | --- |
+| positioning | 列表/条目 `relative`，竖线与圆点用伪元素 `absolute` |
+| responsive | 宽屏两列居中线；窄屏线靠左、日期在上 |
+| integrable | 样式挂在 `.changelog`，`body` 只做演示居中 |
+
+### 2. 时间线怎么画
+
+- 一个 `<ol>`，每条 `<li>` 里是 `<time>` + 文案
+- `ol::before` 画竖线（`top` + `bottom` 拉满，不写死高度）
+- `li::before` 画圆点；`left: 50%` + `translate(-50%)` 让**中心**落在线上
+
+### 3. 窄屏对齐坑（必记）
+
+竖线若写 `transform: none`、圆点仍保留 `translate(-50%)`，点和线会错位。两边要用同一套「中心对准同一个 `left`」的算法。
+
+### 4. 校验
+
+- HTML：W3C Nu → `messages: []`
+- CSS：W3C CSS Validator（CSS 3 + SVG）→ 通过

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changelog Component</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 可嵌入的组件根：样式都挂在这里，别绑死在 body 上 -->
+  <section class="changelog" aria-labelledby="changelog-title">
+    <header class="changelog_header">
+      <h1 id="changelog-title">Changelog</h1>
+      <p class="changelog_subtitle">
+        Here's everything we have shipped in the past few days
+      </p>
+    </header>
+
+    <ol class="changelog_list">
+        <li class="changelog_item">
+            <time class="changelog_date" datetime="2026-11-04">2026.11.04</time>
+            <p class="changelog_text">write a changelog component</p>
+          </li>
+        <li class="changelog_item">
+            <time class="changelog_date" datetime="2026-11-03">2026.11.03</time>
+            <p class="changelog_text">write a portfolio website</p>
+          </li>
+          <li class="changelog_item">
+            <time class="changelog_date" datetime="2026-11-02">2026.11.02</time>
+            <p class="changelog_text">write a basic html website</p>
+          </li>
+      <li class="changelog_item">
+        <time class="changelog_date" datetime="2026-11-01">2026.11.01</time>
+        <p class="changelog_text">write a single page cv</p>
+      </li>
+    </ol>
+
+    <p class="changelog_footer">
+      <a class="changelog_button" href="#">Visit Complete Changelog</a>
+    </p>
+  </section>
+</body>
+</html>
