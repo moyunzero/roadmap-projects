@@ -58,9 +58,10 @@ mkdir -p backend-projects/{beginner,intermediate,advanced}
 | 02 · Basic HTML Website | [beginner/02-basic-html-website](frontend-projects/beginner/02-basic-html-website/) | <https://roadmap.sh/projects/basic-html-website> |
 | 03 · Personal Portfolio | [beginner/03-portfolio-website](frontend-projects/beginner/03-portfolio-website/) | <https://roadmap.sh/projects/portfolio-website> |
 | 04 · Changelog Component | [beginner/04-changelog-component](frontend-projects/beginner/04-changelog-component/) | <https://roadmap.sh/projects/changelog-component> |
+| 05 · Testimonial Cards | [beginner/05-testimonial-cards](frontend-projects/beginner/05-testimonial-cards/) | <https://roadmap.sh/projects/testimonial-cards> |
 
 ## 进度
 
 | Track | 项目数 | 完成 | 状态 |
 | --- | --- | --- | --- |
-| [frontend-projects](frontend-projects/) | 30 | 4 | 🚀 进行中 |
+| [frontend-projects](frontend-projects/) | 30 | 5 | 🚀 进行中 |

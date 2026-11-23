@@ -1,0 +1,262 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #111;
+  line-height: 1.5;
+}
+
+/* —— 整页画廊 —— */
+.gallery {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.section-label {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-split-wrap,
+  .card-carousel-wrap {
+    grid-column: 1 / -1;
+  }
+}
+
+/* —— 1. 气泡卡 —— */
+.card-bubble {
+  max-width: 22rem;
+}
+
+.card-bubble-quote {
+  position: relative;
+  padding: 1.25rem 1.5rem;
+  border-radius: 1rem;
+  background-color: #111;
+  color: #fff;
+}
+
+.card-bubble-quote p + p {
+  margin-top: 0.75rem;
+}
+
+/* 朝下的尖角，对准头像一侧 */
+.card-bubble-quote::after {
+  content: "";
+  position: absolute;
+  left: 1.2rem;
+  bottom: -12px;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #111;
+}
+
+.card-bubble-person {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.card-bubble-avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  /* object-fit: cover; */
+  display: block;
+}
+
+.card-bubble-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.card-bubble-role {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* —— 2. 描边卡 —— */
+.card-border {
+  max-width: 22rem;
+  padding: 1.25rem 1.5rem;
+  background: #fff;
+  border: 2px solid #111;
+  border-radius: 1rem;
+}
+
+.card-border-quote p + p {
+  margin-top: 0.75rem;
+}
+
+.card-border-person {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.card-border-avatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-border-name {
+  font-weight: 700;
+}
+
+.card-border-role {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* —— 3. 图文并排（Flex 同高） —— */
+.card-split {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  max-width: 40rem;
+}
+
+/* 普通 div 可以被 stretch；img 因固有宽高比，浏览器常拒绝被拉高 */
+.card-split-media {
+  position: relative;
+  width: 12rem;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card-split-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-split-panel {
+  flex: 1;
+  padding: 1.5rem;
+  background: #1f2937;
+  color: #fff;
+  border-radius: 1rem;
+}
+
+.card-split-stars {
+  margin: 0 0 0.75rem;
+  color: #fbbf24;
+  letter-spacing: 0.15em;
+  font-size: 1.1rem;
+}
+
+.card-split-name {
+  margin: 0 0 0.25rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card-split-role {
+  margin: 0 0 1rem;
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 560px) {
+  .card-split {
+    flex-direction: column;
+  }
+
+  .card-split-media {
+    width: 100%;
+    height: 14rem; /* 竖排时外包层需要明确高度，绝对定位的图才有参照 */
+  }
+}
+
+/* —— 4. 轮播静态帧 —— */
+.card-carousel {
+  max-width: 36rem;
+  padding: 2rem 1.5rem 1.5rem;
+  background: #fff;
+  border: 2px solid #111;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.card-carousel-quote {
+  margin: 0 auto 1.75rem;
+  max-width: 28rem;
+}
+
+.card-carousel-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card-carousel-arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  background: transparent;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #111;
+}
+
+.card-carousel-arrow:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 3px;
+  border-radius: 0.25rem;
+}
+
+.card-carousel-avatars {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.card-carousel-avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0.45;
+  display: block;
+}
+
+.card-carousel-avatar-active {
+  width: 4rem;
+  height: 4rem;
+  opacity: 1;
+}
+
+.card-carousel-name {
+  margin: 1rem 0 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+}

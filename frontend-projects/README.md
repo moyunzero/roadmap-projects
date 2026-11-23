@@ -12,7 +12,7 @@
 - [x] **02** [Basic HTML Website](beginner/02-basic-html-website/) · `HTML`
 - [x] **03** [Personal Portfolio](beginner/03-portfolio-website/) · `CSS`
 - [x] **04** [Changelog Component](beginner/04-changelog-component/) · `CSS`
-- [ ] **05** [Testimonial Cards](beginner/05-testimonial-cards/) · `CSS`
+- [x] **05** [Testimonial Cards](beginner/05-testimonial-cards/) · `CSS`
 - [ ] **06** [Datepicker UI](beginner/06-datepicker-ui/) · `CSS`
 - [ ] **07** [Accessible Form UI](beginner/07-accessible-form-ui/) · `Accessibility`
 - [ ] **08** [Image Grid Layout](beginner/08-image-grid/) · `CSS`

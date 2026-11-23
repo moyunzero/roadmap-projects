@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonial Cards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="gallery">
+    <!-- 1. 气泡卡 -->
+    <section class="card-bubble-wrap">
+      <p class="section-label">one card</p>
+      <div class="card-bubble">
+        <div class="card-bubble-quote">
+          <p>
+            I have been working with MoYun for a few months now and I have to say
+            that I am very impressed with the work that he has done. He is a very
+            talented developer and I am glad to have him on my team.
+          </p>
+          <p>Highly recommended!</p>
+        </div>
+        <div class="card-bubble-person">
+          <img
+            class="card-bubble-avatar"
+            src="./image.png"
+            width="64"
+            height="64"
+            alt=""
+          >
+          <div>
+            <p class="card-bubble-name">MoYun</p>
+            <p class="card-bubble-role">Junior Frontend Developer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 描边卡 -->
+    <section class="card-border-wrap">
+      <p class="section-label">two card</p>
+      <article class="card-border">
+        <div class="card-border-quote">
+          <p>
+            I have been working with MoYun for a few months now and I have to say
+            that I am very impressed with the work that he has done. He is a very
+            talented developer and I am glad to have him on my team.
+          </p>
+          <p>Highly recommended!</p>
+        </div>
+        <footer class="card-border-person">
+          <img
+            class="card-border-avatar"
+            src="./image.png"
+            width="56"
+            height="56"
+            alt=""
+          >
+          <div>
+            <p class="card-border-name">MoYun</p>
+            <p class="card-border-role">Junior Frontend Developer</p>
+          </div>
+        </footer>
+      </article>
+    </section>
+
+    <!-- 3. 图文并排 -->
+    <section class="card-split-wrap">
+      <p class="section-label">three card</p>
+      <article class="card-split">
+        <!-- 外包一层：Flex 真正拉伸的是这个盒子；img 自己有固有比例，直接 stretch 常失效 -->
+        <div class="card-split-media">
+          <img
+            class="card-split-photo"
+            src="./image.png"
+            width="240"
+            height="240"
+            alt=""
+          >
+        </div>
+        <div class="card-split-panel">
+          <p class="card-split-stars" role="img" aria-label="5 out of 5 stars">★★★★★</p>
+          <p class="card-split-name">MoYun</p>
+          <p class="card-split-role">Engineering Manager</p>
+          <p class="card-split-quote">
+            I have been working with MoYun for a few months now and I have to say
+            that I am very impressed with the work that he has done. He is a very
+            talented developer and I am glad to have him on my team.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- 4. 轮播静态帧 -->
+    <section class="card-carousel-wrap">
+      <p class="section-label">four card</p>
+      <article class="card-carousel">
+        <p class="card-carousel-quote">
+          I have been working with MoYun for a few months now and I have to say
+          that I am very impressed with the work that he has done. He is a very
+          talented developer and I am glad to have him on my team. Highly
+          recommended!
+        </p>
+
+        <div class="card-carousel-nav">
+          <button
+            type="button"
+            class="card-carousel-arrow"
+            aria-label="Previous testimonial"
+          >
+            ‹
+          </button>
+
+          <div class="card-carousel-avatars">
+            <img
+              class="card-carousel-avatar"
+              src="./image.png"
+              width="48"
+              height="48"
+              alt=""
+            >
+            <img
+              class="card-carousel-avatar card-carousel-avatar-active"
+              src="./image.png"
+              width="64"
+              height="64"
+              alt=""
+            >
+            <img
+              class="card-carousel-avatar"
+              src="./image.png"
+              width="48"
+              height="48"
+              alt=""
+            >
+          </div>
+
+          <button
+            type="button"
+            class="card-carousel-arrow"
+            aria-label="Next testimonial"
+          >
+            ›
+          </button>
+        </div>
+
+        <p class="card-carousel-name">MoYun</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
